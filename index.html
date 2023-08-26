@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caprasimo&family=Josefin+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            height: 3800px;
+            width: 1270px;
+        }
+
+        .header {
+            height: 50px;
+            width: 1270px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            height: 33px;
+            width: 400px;
+            float: left;
+            font-size: 30px;
+            font-family: 'Caprasimo', cursive;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            margin-top: 13px;
+
+        }
+
+        .menu {
+            height: 50px;
+            width: 700px;
+            float: left;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            text-transform: uppercase;
+            float: left;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: 'Caprasimo', cursive;
+            font-family: 'Josefin Sans', sans-serif;
+            padding: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .icons {
+            height: 39px;
+            width: 170px;
+            float: left;
+            text-align: center;
+            margin-top: 11px;
+            cursor: pointer;
+        }
+
+        .slider1 {
+            height: 400px;
+            width: 1270px;
+        }
+
+        .info {
+            height: 400px;
+            width: 635px;
+            background-color: #d1c9bc;
+            float: left;
+            padding: 100px;
+            text-align: center;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        .img {
+            height: 400px;
+            width: 635px;
+            float: left;
+            
+        }
+        .btn {
+            height: 33px;
+            width: 100px;
+            background-color: #ee4f50;
+            border-radius: 5px;
+            border: none;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .featured {
+            height: 435px;
+            width: 1270px;
+            font-size: 30px;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .most {
+            height: 435px;
+            width: 1270px;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            height: 50px;
+            width: 1270px;
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        .img1 {
+            height: 250px;
+            width: 300px;
+            padding: 20px;
+            margin-left: 55px;
+            margin-top: 15px;
+            float: left;
+            border-radius: 30px;
+        }
+
+        .imgj {
+            height: 250px;
+            width: 300px;
+            padding: 20px;
+            margin-left: 100px;
+            margin-top: 40px;
+            float: left;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+
+        .img2 {
+            height: 250px;
+            width: 250px;
+            padding: 10px;
+            margin-left: 30px;
+            margin-top: 15px;
+            float: left;
+            border-radius: 30px;
+        }
+
+        .img3 {
+            height: 250px;
+            width: 250px;
+            float: left;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+
+        .para1 {
+            margin-left: 150px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para2 {
+            margin-left: 250px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para3 {
+            margin-left: 240px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para4 {
+            margin-left: 125px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para5 {
+            margin-left: 230px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para6 {
+            margin-left: 230px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .para7 {
+            margin-left: 200px;
+            float: left;
+            font-size: 20px;
+        }
+
+        .slider2 {
+            height: 400px;
+            width: 1270px;
+        }
+
+        .info2 {
+            height: 300px;
+            width: 635px;
+            float: left;
+            font-size: 40px;
+            text-align: center;
+            background: linear-gradient(45deg, #e3d7c9, #f2efe8, #e0d4c6);
+            font-family: 'Bungee Spice', cursive;
+            padding-top: 100px;
+
+        }
+
+        .image2 {
+            height: 400px;
+            width: 635px;
+            float: left;
+        }
+
+        .shop {
+            height: 35px;
+            width: 100px;
+            background-color: #f75853;
+            font-family: 'Big Shoulders Inline Text', cursive;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .slider3 {
+            height: 200px;
+            width: 1270px;
+            background-color: violet;
+        }
+
+        .money {
+            height: 200px;
+            width: 317px;
+            float: left;
+        }
+
+        .moneyicon {
+            height: 90px;
+            width: 90px;
+            margin: 25px 100px;
+        }
+
+        .delivery {
+            height: 200px;
+            width: 317px;
+            background-color: orange;
+            float: left;
+        }
+
+        .freeicon {
+            height: 110px;
+            width: 110px;
+            margin: 25px 90px;
+            margin-bottom: 0px;
+
+        }
+
+        .support {
+            height: 200px;
+            width: 317px;
+            background-color: teal;
+            float: left;
+        }
+
+        .supporticon {
+            height: 100px;
+            width: 100px;
+            margin: 30px 95px;
+            margin-bottom: 0px;
+        }
+
+        .payment {
+            height: 200px;
+            width: 317px;
+            float: left;
+        }
+
+        .securefree {
+            height: 90px;
+            width: 90px;
+            margin: 20px 100px;
+            margin-bottom: 0px;
+        }
+
+        .slider4 {
+            height: 800px;
+            width: 1270px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .journal {
+            height: 400px;
+            width: 1270px;
+        }
+
+        .follow {
+            height: 400px;
+            width: 1270px;
+        }
+
+        .bottom {
+            height: 400px;
+            width: 1270px;
+        }
+
+        .about {
+            height: 350px;
+            width: 1270px;
+            padding-left: 78px;
+        }
+
+        .left {
+            height: 350px;
+            width: 280px;
+            float: left;
+        }
+
+        .left ul {
+            list-style-type: none;
+        }
+
+        .left ul li {
+            margin: 25px;
+        }
+
+        ul li:hover {
+           cursor: pointer;
+        }
+
+        .center {
+            height: 350px;
+            width: 280px;
+            float: left;
+        }
+
+        .center ul {
+            list-style-type: none;
+        }
+
+        .center ul li {
+            margin: 25px;
+        }
+
+        .right {
+            height: 350px;
+            width: 280px;
+            float: left;
+        }
+
+        .right ul {
+            list-style-type: none;
+        }
+
+        .right ul li {
+            margin: 25px;
+        }
+
+        .follow2 {
+            height: 350px;
+            width: 280px;
+            float: left;
+        }
+
+        .bfooter {
+            height: 50px;
+            width: 1270px;
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-left: 535px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="logo">Silon<span style="color: red;">.</span></div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                    <li>Products</li>
+                    <li>Brands</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i class="fa fa-search" style="font-size:24px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-shopping-cart" style="font-size:24px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-heart" style="font-size:24px;"></i>
+            </div>
+        </div>
+        <div class="slider1">
+            <div class="info">
+                Ultimate Collection <br><br>
+                <h1>COMPLETE WOMEN FASHION HERE</h1>
+                <input type="button" value="SHOP NOW" class="btn">
+            </div>
+
+            <div class="img">
+                <img src="shop5.jpeg" alt="Error While Loading" class="img">
+            </div>
+        </div>
+        <div class="featured">
+            <div class="heading">Featured Product</div>
+            <div><img src="redpurse.jpeg" class="img1" alt="Error"></div>
+            <div><img src="purse.webp" class="img1" alt="Error"></div>
+            <div><img src="creampurse.jpg" class="img1" alt="Error"></div>
+            <div class="desc">
+                <p class="para1">Red Women Purses <br>$35.00</p>
+                <p class="para2">Red Women Purses <br>$15.00</p>
+                <p class="para3">Red Women Purses <br>$50.00</p>
+            </div>
+        </div>
+        <div class="slider2">
+            <div class="info2">
+                50% Off <br>
+                All Women's Collection <br>
+                <input type="button" value="Shop Now" class="shop">
+            </div>
+            <div class="image2">
+                <img src="slider2.jpeg" alt="Error" class="image2">
+            </div>
+        </div>
+        <div class="most">
+            <div class="heading">Most Popular</div>
+            <div><img src="lipstick.jpg" class="img2" alt="Error"></div>
+            <div><img src="nail.jpg" class="img2" alt="Error"></div>
+            <div><img src="eye.jpg" class="img2" alt="Error"></div>
+            <div><img src="cream.jpg" class="img2" alt="Error"></div>
+
+
+            <div class="desc">
+                <p class="para4">LipStick<br>$10.00</p>
+                <p class="para5">Nail Paint<br>$15.00</p>
+                <p class="para6">Eyeliner<br>$5.00</p>
+                <p class="para7">Face Moisturiser<br>$50.00</p>
+            </div>
+        </div>
+        <div class="slider3">
+            <div class="money">
+                <img src="money.png" alt="Error" class="moneyicon">
+                <h3 style="margin-left: 60px;">Money Back Gaurantee</h3>
+            </div>
+            <div class="delivery">
+                <img src="free.png" alt="Error" class="freeicon">
+                <h3 style="margin-left: 100px;">Free Delivery</h3>
+            </div>
+            <div class="support">
+                <img src="support.png" alt="Error" class="supporticon">
+                <h3 style="margin-left:80px;">Always Support</h3>
+            </div>
+            <div class="payment">
+                <img src="secure.png" alt="Error" class="securefree"><br><br>
+                <h3 style="margin-left:90px;">Secure Payment</h3>
+            </div>
+        </div>
+        <div class="slider4">
+            <div class="most">
+                <div class="heading">Most Popular</div>
+                <div><img src="cream1.webp" class="img2" alt="Error"></div>
+                <div><img src="powder1.jpg" class="img2" alt="Error"></div>
+                <div><img src="lipstick1.jpg" class="img2" alt="Error"></div>
+                <div><img src="hair.avif" class="img2" alt="Error"></div>
+
+
+                <div class="desc">
+                    <p class="para4">LipStick<br>$10.00</p>
+                    <p class="para5">Nail Paint<br>$15.00</p>
+                    <p class="para6">Eyeliner<br>$5.00</p>
+                    <p class="para7">Face Moisturiser<br>$50.00</p>
+                </div>
+                <div><img src="cream3.avif" class="img2" alt="Error"></div>
+                <div><img src="cream2.jpg" class="img2" alt="Error"></div>
+                <div><img src="lotion.webp" class="img2" alt="Error"></div>
+                <div><img src="lotion1.avif" class="img2" alt="Error"></div>
+
+
+                <div class="desc">
+                    <p class="para4">LipStick<br>$10.00</p>
+                    <p class="para5">Nail Paint<br>$15.00</p>
+                    <p class="para6">Eyeliner<br>$5.00</p>
+                    <p class="para7">Face Moisturiser<br>$50.00</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="journal">
+            <div class="heading">
+                <h1 style="margin-top:10px;">Silon Journal</h1>
+            </div>
+            <div><img src="J1.jpg" class="imgj" alt="Error"></div>
+            <div><img src="j2.webp" class="imgj" alt="Error"></div>
+            <div><img src="j3.jpg" class="imgj" alt="Error"></div>
+        </div>
+        <div class="follow">
+            <div class="heading">
+                <h1 style="margin-top: 10px;">Follow Us</h1>
+            </div>
+            <div><img src="f1.jpeg" class="img2" alt="Error"></div>
+            <div><img src="f2.jpg" class="img2" alt="Error"></div>
+            <div><img src="f3.jpg" class="img2" alt="Error"></div>
+            <div><img src="f4.jpg" class="img2" alt="Error"></div>
+        </div>
+        <div class="bottom">
+            <div class="about">
+                <div class="left">
+                    <h4 style="margin-left: 100px; margin-top: 20px;">About us</h4>
+                    <ul>
+                        <li>Who we are</li>
+                        <li>Work with us</li>
+                        <li>Become a supplier</li>
+                        <li>Investor Relations</li>
+                        <li>Our Devices</li>
+                        <li>Affliate Program</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <h4 style="margin-left:100px;margin-top:20px;">Useful Links</h4>
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Common FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Cancellation</li>
+                        <li>Track Order</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h4 style="margin-left:80px;margin-top:20px;">Online Shopping</h4>
+                    <ul>
+                        <li>Men Shopping</li>
+                        <li>Women Shopping</li>
+                        <li>Gift Cards</li>
+                        <li>Home & Living</li>
+                        <li>Dectronics</li>
+                        <li>Accesoories</li>
+                    </ul>
+                </div>
+                <div class="follow2">
+                    <h4 style="margin-left: 45px; margin-top: 20px;">Experience APP On Mobile</h4>
+                    <h2 style="margin: 80px;">Follow us</h2>
+                    <i class="fa fa-facebook-f" style="font-size:24px;margin-left: 60px;"></i>
+                    <i class="fa fa-twitter" style="font-size:24px;margin-left: 50px;"></i>
+                    <i class="fa fa-pinterest" style="font-size:24px;margin-left: 50px;"></i>
+
+                </div>
+            </div>
+            <div class="bfooter">
+                Copyright &copy; 2023 Developed By Prince Singh ...
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
